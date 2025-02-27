@@ -47,8 +47,6 @@ target 'admob' do
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
   )
 
-  # Quita la línea que añadimos antes: pod 'GoogleMobileAds', '~> 10.0'
-
   post_install do |installer|
     react_native_post_install(
       installer,
